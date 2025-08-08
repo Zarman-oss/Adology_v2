@@ -33,9 +33,13 @@
 
 @layer components {
   .primary-button {
-    padding: 32px 16px;
-    pointer: cursor-pointer;
-    text: white; 
+    cursor: pointer;
+    color: white;
+    background-color: var(--grey-900);
+  }
+
+  .problem-section-card-bg {
+    background-color: var(--primary-500);
   }
 }
 
@@ -1076,24 +1080,6 @@ body {
 }
 
 /* other classes */
-.inner-shop-button {
-  background-color: var(--white-400);
-}
-
-.inner-card-bg {
-  background-color: var(--grey-700);
-}
-
-.modules-section-icons-bg {
-  background-color: #404141;
-}
-.feature-card-icon-bg {
-  background-color: var(--grey-800);
-}
-
-.bg-divider {
-  background-color: var(--white-900);
-}
 
 /* works section card bg */
 
