@@ -46,13 +46,15 @@
 :root {
   --background: #000000;
   --foreground: oklch(0.95 0.01 240);
+
+  /* Desktop / Tablet sizes */
   --font-size-overline-2: 10px;
   --font-size-overline-1: 12px;
+  --font-size-caption-3: 12px;
   --font-size-caption-2: 12px;
   --font-size-caption-1: 14px;
   --font-size-body-2: 16px;
   --font-size-body-1: 18px;
-  --font-size-heading-6: 20px;
   --font-size-heading-5: 24px;
   --font-size-heading-4: 28px;
   --font-size-heading-3: 32px;
@@ -627,456 +629,423 @@ body {
   background-color: var(--text-white);
 }
 
-/* Regular Weight */
-.overline-2-regular {
-  font-size: var(--font-size-overline-2);
-  line-height: var(--line-height-auto);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+/* fonts */
+
+:root {
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
-.overline-1-regular {
-  font-size: var(--font-size-overline-1);
-  line-height: var(--line-height-auto);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+/* Default (Desktop) Typography */
+.overline-2 {
+  font-weight: var(--font-weight-regular);
+  font-size: 10px;
+  line-height: normal;
+}
+.overline-2--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 10px;
+  line-height: normal;
+}
+.overline-2--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 10px;
+  line-height: normal;
+}
+.overline-2--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 10px;
+  line-height: normal;
 }
 
-.caption-2-regular {
-  font-size: var(--font-size-caption-2);
-  line-height: var(--line-height-auto);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.overline-1 {
+  font-weight: var(--font-weight-regular);
+  font-size: 12px;
+  line-height: normal;
+}
+.overline-1--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 12px;
+  line-height: normal;
+}
+.overline-1--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  line-height: normal;
+}
+.overline-1--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: normal;
 }
 
-.caption-1-regular {
-  font-size: var(--font-size-caption-1);
-  line-height: var(--line-height-140);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.caption-2 {
+  font-weight: var(--font-weight-regular);
+  font-size: 12px;
+  line-height: normal;
+}
+.caption-2--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 12px;
+  line-height: normal;
+}
+.caption-2--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  line-height: normal;
+}
+.caption-2--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: normal;
 }
 
-.body-2-regular {
-  font-size: var(--font-size-body-2);
-  line-height: var(--line-height-140);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.caption-1 {
+  font-weight: var(--font-weight-regular);
+  font-size: 14px;
+  line-height: 140%;
+}
+.caption-1--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 14px;
+  line-height: 140%;
+}
+.caption-1--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 14px;
+  line-height: 140%;
+}
+.caption-1--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  line-height: 140%;
 }
 
-.body-1-regular {
-  font-size: var(--font-size-body-1);
-  line-height: var(--line-height-140);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.body-2 {
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: 140%;
+}
+.body-2--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 140%;
+}
+.body-2--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 16px;
+  line-height: 140%;
+}
+.body-2--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 140%;
 }
 
-.heading-6-regular {
-  font-size: var(--font-size-heading-6);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.body-1 {
+  font-weight: var(--font-weight-regular);
+  font-size: 18px;
+  line-height: 140%;
+}
+.body-1--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 18px;
+  line-height: 140%;
+}
+.body-1--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  line-height: 140%;
+}
+.body-1--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: 140%;
 }
 
-.heading-5-regular {
-  font-size: var(--font-size-heading-5);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.heading-6 {
+  font-weight: var(--font-weight-regular);
+  font-size: 20px;
+  line-height: 120%;
+}
+.heading-6--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 20px;
+  line-height: 120%;
+}
+.heading-6--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 20px;
+  line-height: 120%;
+}
+.heading-6--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: 120%;
 }
 
-.heading-4-regular {
-  font-size: var(--font-size-heading-4);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.heading-5 {
+  font-weight: var(--font-weight-regular);
+  font-size: 24px;
+  line-height: 120%;
+}
+.heading-5--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 24px;
+  line-height: 120%;
+}
+.heading-5--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 24px;
+  line-height: 120%;
+}
+.heading-5--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 24px;
+  line-height: 120%;
 }
 
-.heading-3-regular {
-  font-size: var(--font-size-heading-3);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.heading-4 {
+  font-weight: var(--font-weight-regular);
+  font-size: 28px;
+  line-height: 120%;
+}
+.heading-4--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 28px;
+  line-height: 120%;
+}
+.heading-4--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 28px;
+  line-height: 120%;
+}
+.heading-4--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 28px;
+  line-height: 120%;
 }
 
-.heading-2-regular {
-  font-size: var(--font-size-heading-2);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.heading-3 {
+  font-weight: var(--font-weight-regular);
+  font-size: 32px;
+  line-height: 120%;
+}
+.heading-3--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 32px;
+  line-height: 120%;
+}
+.heading-3--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 32px;
+  line-height: 120%;
+}
+.heading-3--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 32px;
+  line-height: 120%;
 }
 
-.heading-1-regular {
-  font-size: var(--font-size-heading-1);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.heading-2 {
+  font-weight: var(--font-weight-regular);
+  font-size: 38px;
+  line-height: 120%;
+}
+.heading-2--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 38px;
+  line-height: 120%;
+}
+.heading-2--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 38px;
+  line-height: 120%;
+}
+.heading-2--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 38px;
+  line-height: 120%;
 }
 
-.display-2-regular {
-  font-size: var(--font-size-display-2);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.heading-1 {
+  font-weight: var(--font-weight-regular);
+  font-size: 48px;
+  line-height: 120%;
+}
+.heading-1--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 48px;
+  line-height: 120%;
+}
+.heading-1--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 48px;
+  line-height: 120%;
+}
+.heading-1--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 48px;
+  line-height: 120%;
 }
 
-.display-1-regular {
-  font-size: var(--font-size-display-1);
-  line-height: var(--line-height-120);
-  font-weight: 400;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.display-2 {
+  font-weight: var(--font-weight-regular);
+  font-size: 54px;
+  line-height: 120%;
+}
+.display-2--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 54px;
+  line-height: 120%;
+}
+.display-2--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 54px;
+  line-height: 120%;
+}
+.display-2--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 54px;
+  line-height: 120%;
 }
 
-/* Medium Weight */
-.overline-2-medium {
-  font-size: var(--font-size-overline-2);
-  line-height: var(--line-height-auto);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+.display-1 {
+  font-weight: var(--font-weight-regular);
+  font-size: 72px;
+  line-height: 120%;
+}
+.display-1--medium {
+  font-weight: var(--font-weight-medium);
+  font-size: 72px;
+  line-height: 120%;
+}
+.display-1--semibold {
+  font-weight: var(--font-weight-semibold);
+  font-size: 72px;
+  line-height: 120%;
+}
+.display-1--bold {
+  font-weight: var(--font-weight-bold);
+  font-size: 72px;
+  line-height: 120%;
 }
 
-.overline-1-medium {
-  font-size: var(--font-size-overline-1);
-  line-height: var(--line-height-auto);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+/* Mobile Typography */
+@media (max-width: 768px) {
+  .overline-2,
+  .overline-2--medium,
+  .overline-2--semibold,
+  .overline-2--bold {
+    font-size: 8px;
+    line-height: normal;
+  }
 
-.caption-2-medium {
-  font-size: var(--font-size-caption-2);
-  line-height: var(--line-height-auto);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .overline-1,
+  .overline-1--medium,
+  .overline-1--semibold,
+  .overline-1--bold {
+    font-size: 10px;
+    line-height: normal;
+  }
 
-.caption-1-medium {
-  font-size: var(--font-size-caption-1);
-  line-height: var(--line-height-140);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .caption-3,
+  .caption-3--medium,
+  .caption-3--semibold,
+  .caption-3--bold {
+    font-size: 10px;
+    line-height: normal;
+  }
 
-.body-2-medium {
-  font-size: var(--font-size-body-2);
-  line-height: var(--line-height-140);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .caption-2,
+  .caption-2--medium,
+  .caption-2--semibold,
+  .caption-2--bold {
+    font-size: 12px;
+    line-height: normal;
+  }
 
-.body-1-medium {
-  font-size: var(--font-size-body-1);
-  line-height: var(--line-height-140);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .caption-1,
+  .caption-1--medium,
+  .caption-1--semibold,
+  .caption-1--bold {
+    font-size: 13px;
+    line-height: 140%;
+  }
 
-.heading-6-medium {
-  font-size: var(--font-size-heading-6);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .body-2,
+  .body-2--medium,
+  .body-2--semibold,
+  .body-2--bold {
+    font-size: 12px;
+    line-height: 140%;
+  }
 
-.heading-5-medium {
-  font-size: var(--font-size-heading-5);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .body-1,
+  .body-1--medium,
+  .body-1--semibold,
+  .body-1--bold {
+    font-size: 14px;
+    line-height: 140%;
+  }
 
-.heading-4-medium {
-  font-size: var(--font-size-heading-4);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .heading-5,
+  .heading-5--medium,
+  .heading-5--semibold,
+  .heading-5--bold {
+    font-size: 14px;
+    line-height: 120%;
+  }
 
-.heading-3-medium {
-  font-size: var(--font-size-heading-3);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .heading-4,
+  .heading-4--medium,
+  .heading-4--semibold,
+  .heading-4--bold {
+    font-size: 16px;
+    line-height: 120%;
+  }
 
-.heading-2-medium {
-  font-size: var(--font-size-heading-2);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .heading-3,
+  .heading-3--medium,
+  .heading-3--semibold,
+  .heading-3--bold {
+    font-size: 18px;
+    line-height: 120%;
+  }
 
-.heading-1-medium {
-  font-size: var(--font-size-heading-1);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .heading-2,
+  .heading-2--medium,
+  .heading-2--semibold,
+  .heading-2--bold {
+    font-size: 20px;
+    line-height: 120%;
+  }
 
-.display-2-medium {
-  font-size: var(--font-size-display-2);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .heading-1,
+  .heading-1--medium,
+  .heading-1--semibold,
+  .heading-1--bold {
+    font-size: 24px;
+    line-height: 120%;
+  }
 
-.display-1-medium {
-  font-size: var(--font-size-display-1);
-  line-height: var(--line-height-120);
-  font-weight: 500;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
+  .display-2,
+  .display-2--medium,
+  .display-2--semibold,
+  .display-2--bold {
+    font-size: 28px;
+    line-height: 120%;
+  }
 
-/* SemiBold Weight */
-.overline-2-semibold {
-  font-size: var(--font-size-overline-2);
-  line-height: var(--line-height-auto);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.overline-1-semibold {
-  font-size: var(--font-size-overline-1);
-  line-height: var(--line-height-auto);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.caption-2-semibold {
-  font-size: var(--font-size-caption-2);
-  line-height: var(--line-height-auto);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.caption-1-semibold {
-  font-size: var(--font-size-caption-1);
-  line-height: var(--line-height-140);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.body-2-semibold {
-  font-size: var(--font-size-body-2);
-  line-height: var(--line-height-140);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.body-1-semibold {
-  font-size: var(--font-size-body-1);
-  line-height: var(--line-height-140);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-6-semibold {
-  font-size: var(--font-size-heading-6);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-5-semibold {
-  font-size: var(--font-size-heading-5);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-4-semibold {
-  font-size: var(--font-size-heading-4);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-3-semibold {
-  font-size: var(--font-size-heading-3);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-2-semibold {
-  font-size: var(--font-size-heading-2);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-1-semibold {
-  font-size: var(--font-size-heading-1);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.display-2-semibold {
-  font-size: var(--font-size-display-2);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.display-1-semibold {
-  font-size: var(--font-size-display-1);
-  line-height: var(--line-height-120);
-  font-weight: 600;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-/* Bold Weight */
-.overline-2-bold {
-  font-size: var(--font-size-overline-2);
-  line-height: var(--line-height-auto);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.overline-1-bold {
-  font-size: var(--font-size-overline-1);
-  line-height: var(--line-height-auto);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.caption-2-bold {
-  font-size: var(--font-size-caption-2);
-  line-height: var(--line-height-auto);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.caption-1-bold {
-  font-size: var(--font-size-caption-1);
-  line-height: var(--line-height-140);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.body-2-bold {
-  font-size: var(--font-size-body-2);
-  line-height: var(--line-height-140);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.body-1-bold {
-  font-size: var(--font-size-body-1);
-  line-height: var(--line-height-140);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-6-bold {
-  font-size: var(--font-size-heading-6);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-5-bold {
-  font-size: var(--font-size-heading-5);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-4-bold {
-  font-size: var(--font-size-heading-4);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-3-bold {
-  font-size: var(--font-size-heading-3);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-2-bold {
-  font-size: var(--font-size-heading-2);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.heading-1-bold {
-  font-size: var(--font-size-heading-1);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.display-2-bold {
-  font-size: var(--font-size-display-2);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
-.display-1-bold {
-  font-size: var(--font-size-display-1);
-  line-height: var(--line-height-120);
-  font-weight: 700;
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  .display-1,
+  .display-1--medium,
+  .display-1--semibold,
+  .display-1--bold {
+    font-size: 34px;
+    line-height: 120%;
+  }
 }
 
 /* other classes */
@@ -1153,6 +1122,7 @@ body {
 }
 
 /* styles/Gradient.module.css */
+
 .gradient {
   background: linear-gradient(
     to right,
@@ -1163,16 +1133,4 @@ body {
   );
 
   width: 100%; /* Full width */
-}
-
-@media (min-width: 640px) {
-  /* sm breakpoint */
-}
-
-@media (min-width: 768px) {
-  /* md breakpoint */
-}
-
-@media (min-width: 1024px) {
-  /* lg breakpoint */
 }

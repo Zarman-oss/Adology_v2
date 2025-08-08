@@ -13,7 +13,7 @@ export default function Navbar() {
           height={20}
           className='object-cover'
         />
-        <span className='uppercase body-1-medium'>Adology AI</span>
+        <span className='uppercase body-1--medium'>Adology AI</span>
       </div>
       <LucideMenu
         className='sm:hidden cursor-pointer'
@@ -21,7 +21,7 @@ export default function Navbar() {
         size={24}
       />
 
-      <ul className='body-1-medium hidden sm:flex justify-between items-center gap-8 cursor-pointer relative'>
+      <ul className='body-1--medium hidden sm:flex justify-between items-center gap-8 cursor-pointer relative'>
         {/* Resources Dropdown */}
         <li className='relative group'>
           <div className='flex items-center gap-1'>

@@ -3,7 +3,7 @@ import PrimaryButton from '@/components/ui/buttons/PrimaryButton';
 export default function HeroSection() {
   return (
     <section className='flex py-16 flex-col section-container items-center justify-center text-center gap-6'>
-      <h1 className='display-2-semibold lg:display-1-semibold text-white  leading-tight max-w-5xl'>
+      <h1 className='display-1--semibold text-white leading-tight max-w-5xl'>
         Optimize Creative. <br />
         Scale Insights. <br />
         Outperform Competitors.
@@ -23,7 +23,7 @@ export default function HeroSection() {
 
       <div className='max-w-5xl gap-14 flex justify-center items-center flex-wrap mt-14'>
         <div className='w-30% flex flex-col justify-start items-center gap-6'>
-          <span className='text-white display-1-semibold leading-[57.60px]'>
+          <span className='text-white display-1--semibold leading-[57.60px]'>
             20H
           </span>
           <p className='body-1-regular text-white leading-relaxed capitalize'>
@@ -31,7 +31,7 @@ export default function HeroSection() {
           </p>
         </div>
         <div className='w-30% flex flex-col justify-start items-center gap-6'>
-          <span className='text-white display-1-semibold leading-[57.60px]'>
+          <span className='text-white display-1--semibold leading-[57.60px]'>
             +20%
           </span>
           <p className='body-1-regular text-white leading-relaxed capitalize'>
@@ -39,7 +39,7 @@ export default function HeroSection() {
           </p>
         </div>
         <div className='w-30% flex flex-col justify-start items-center gap-6'>
-          <span className='text-white display-1-semibold leading-[57.60px]'>
+          <span className='text-white display-1--semibold leading-[57.60px]'>
             5x
           </span>
           <p className='body-1-regular text-white leading-relaxed capitalize'>
@@ -65,7 +65,7 @@ export default function HeroSection() {
           priority
         />
       </div>
-      <p className='heading-5-semibold sm:heading-4-semibold text-white'>
+      <p className='heading-4--semibold text-white'>
         Every year, marketing teams burn $125B on ad creatives that don’t
         convert Creative drives 47% of ad performance yet remains the least
         optimized part of the strategy.
