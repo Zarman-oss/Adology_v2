@@ -1,4 +1,9 @@
-import { Geist, Geist_Mono, Plus_Jakarta_Sans } from 'next/font/google';
+import {
+  Geist,
+  Geist_Mono,
+  Plus_Jakarta_Sans,
+  Manrope,
+} from 'next/font/google';
 import './globals.css';
 import { ReactNode } from 'react';
 
@@ -12,8 +17,13 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-const jakarta_Sans = Plus_Jakarta_Sans({
+const jakartaSans = Plus_Jakarta_Sans({
   variable: '--font-jakarta-sans',
+  subsets: ['latin'],
+});
+
+const manrope = Manrope({
+  variable: '--font-manrope',
   subsets: ['latin'],
 });
 
@@ -30,7 +40,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  ${jakarta_Sans.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jakartaSans.variable} ${manrope.variable} antialiased`}
       >
         {children}
       </body>

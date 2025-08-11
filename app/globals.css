@@ -41,6 +41,10 @@
   .problem-section-card-bg {
     background-color: var(--primary-500);
   }
+
+  .why-adology-card-bg {
+    background-color: var(--offwhite);
+  }
 }
 
 :root {
@@ -151,7 +155,7 @@
   --info-100: #fefeff;
   --info-50: #feffff;
 
-  /* Text Colo  rs */
+  /* Text Colors */
   --text-black: #000000;
   --text-grey: #808080;
   --text-light-silver: #d9d9d9;
@@ -162,6 +166,7 @@
   --grey-900: #212121;
   --grey-800: #404141;
   --grey-700: #555556;
+  --offwhite: #fbfbfb;
 }
 
 /* Base font settings */
@@ -174,11 +179,19 @@ body {
 }
 
 /* Monospace utility for code or specific elements */
-
 .mono {
   font-family: var(--font-geist-mono), 'Courier New', Courier, monospace;
 }
 
+/* Font weight variables */
+:root {
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Jakarta Sans font utilities */
 .jakarta {
   font-family: var(--font-jakarta-sans);
   font-size: 28px;
@@ -192,12 +205,14 @@ body {
   line-height: var(--line-height-auto);
   font-weight: 500;
 }
+
 .jakarta-xs {
   font-family: var(--font-jakarta-sans);
   font-size: 6px;
   line-height: var(--line-height-auto);
   font-weight: 500;
 }
+
 .jakarta-xxs {
   font-family: var(--font-jakarta-sans);
   font-size: 4px;
@@ -206,23 +221,207 @@ body {
 }
 
 .jakarta-semibold-2 {
+  font-family: var(--font-jakarta-sans);
   font-size: 36px;
-  font-weight: 600;
   line-height: var(--line-height-auto);
+  font-weight: 600;
 }
 
 .jakarta-semibold {
+  font-family: var(--font-jakarta-sans);
   font-size: 15px;
   line-height: var(--line-height-auto);
   font-weight: 600;
 }
 
 .jakarta-semibold-1 {
+  font-family: var(--font-jakarta-sans);
   font-size: 12px;
   line-height: var(--line-height-auto);
   font-weight: 600;
 }
 
+/* Manrope font utilities */
+.manrope {
+  font-family: var(--font-manrope);
+  font-size: 28px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+
+.manrope-xl {
+  font-family: var(--font-manrope);
+  font-size: 124px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+
+.manrope-sm {
+  font-family: var(--font-manrope);
+  font-size: 12px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+
+.manrope-xs {
+  font-family: var(--font-manrope);
+  font-size: 6px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+
+.manrope-xxs {
+  font-family: var(--font-manrope);
+  font-size: 4px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+
+.manrope-semibold-2 {
+  font-family: var(--font-manrope);
+  font-size: 36px;
+  line-height: var(--line-height-auto);
+  font-weight: 600;
+}
+
+.manrope-semibold {
+  font-family: var(--font-manrope);
+  font-size: 15px;
+  line-height: var(--line-height-auto);
+  font-weight: 600;
+}
+
+.manrope-semibold-1 {
+  font-family: var(--font-manrope);
+  font-size: 12px;
+  line-height: var(--line-height-auto);
+  font-weight: 600;
+}
+
+/* Responsive Typography for Jakarta Sans and Manrope */
+@media (max-width: 768px) {
+  .jakarta {
+    font-size: 20px;
+  }
+
+  .jakarta-sm {
+    font-size: 10px;
+  }
+
+  .jakarta-xs {
+    font-size: 5px;
+  }
+
+  .jakarta-xxs {
+    font-size: 3px;
+  }
+
+  .jakarta-semibold-2 {
+    font-size: 24px;
+  }
+
+  .jakarta-semibold {
+    font-size: 12px;
+  }
+
+  .jakarta-semibold-1 {
+    font-size: 10px;
+  }
+
+  .manrope {
+    font-size: 20px;
+  }
+
+  .manrope-xl {
+    font-size: 64px;
+  }
+
+  .manrope-sm {
+    font-size: 10px;
+  }
+
+  .manrope-xs {
+    font-size: 5px;
+  }
+
+  .manrope-xxs {
+    font-size: 3px;
+  }
+
+  .manrope-semibold-2 {
+    font-size: 24px;
+  }
+
+  .manrope-semibold {
+    font-size: 12px;
+  }
+
+  .manrope-semibold-1 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jakarta {
+    font-size: 16px;
+  }
+
+  .jakarta-sm {
+    font-size: 8px;
+  }
+
+  .jakarta-xs {
+    font-size: 4px;
+  }
+
+  .jakarta-xxs {
+    font-size: 2px;
+  }
+
+  .jakarta-semibold-2 {
+    font-size: 20px;
+  }
+
+  .jakarta-semibold {
+    font-size: 10px;
+  }
+
+  .jakarta-semibold-1 {
+    font-size: 8px;
+  }
+
+  .manrope {
+    font-size: 16px;
+  }
+
+  .manrope-xl {
+    font-size: 48px;
+  }
+
+  .manrope-sm {
+    font-size: 8px;
+  }
+
+  .manrope-xs {
+    font-size: 4px;
+  }
+
+  .manrope-xxs {
+    font-size: 2px;
+  }
+
+  .manrope-semibold-2 {
+    font-size: 20px;
+  }
+
+  .manrope-semibold {
+    font-size: 10px;
+  }
+
+  .manrope-semibold-1 {
+    font-size: 8px;
+  }
+}
 /* Utility classes for applying colors */
 .primary-900 {
   color: var(--primary-900);
@@ -630,7 +829,6 @@ body {
 }
 
 /* fonts */
-
 :root {
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -1050,6 +1248,10 @@ body {
 
 /* other classes */
 
+.why-adology-card-icon {
+  background-color: var(--grey-900);
+}
+
 /* works section card bg */
 
 .card-grey {
@@ -1108,6 +1310,7 @@ body {
     filter: blur(30vw);
   }
 }
+
 .image-section-bg {
   background-image: url('/LoginPageImage.png');
   background-size: cover;
@@ -1131,6 +1334,5 @@ body {
     rgba(31, 31, 31, 0.5) 66%,
     rgba(62, 62, 62, 0.2)
   );
-
   width: 100%; /* Full width */
 }
