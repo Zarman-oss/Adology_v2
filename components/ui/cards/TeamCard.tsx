@@ -1,7 +1,5 @@
 import SecondaryButton from '@/components/ui/buttons/SecondaryButton';
-import { bulletPoints } from '@/data/bulletPoints';
 import { LucideMegaphone } from 'lucide-react';
-import Image from 'next/image';
 
 export default function TeamCard({ title, description }) {
   return (
