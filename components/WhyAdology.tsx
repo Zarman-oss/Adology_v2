@@ -1,30 +1,12 @@
-import TeamCard from '@/components/ui/cards/TeamCard';
-import TeamCardBullet from '@/components/ui/misc/TeamCardBullet';
-
+import TeamCardContainer from '@/components/ui/cards/TeamCardContainer';
 export default function WhyAdology() {
   return (
-    <section className='mt-24 px-4 sm:px-6 md:px-8 py-8 items-center gap-6 bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
-      <div>
-        <TeamCard
-          title='For Marketing Teams'
-          description='Optimize ad spending with detailed creative analysis.'
-        />
-        <TeamCardBullet />
-      </div>
-      <div>
-        <TeamCard
-          title='For Marketing Teams'
-          description='Optimize ad spending with detailed creative analysis.'
-        />
-        <TeamCardBullet />
-      </div>
-      <div>
-        <TeamCard
-          title='For Marketing Teams'
-          description='Optimize ad spending with detailed creative analysis.'
-        />
-        <TeamCardBullet />
-      </div>
+    <section className='mt-24 py-24 px-4 sm:px-6 md:px-8 bg-white '>
+      <p className='body-1 text-grey text-center uppercase'>Why Adology</p>
+      <h2 className='heading-1--semibold text-black text-center'>
+        Solutions for Every Team
+      </h2>
+      <TeamCardContainer />
     </section>
   );
 }

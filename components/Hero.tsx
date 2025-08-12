@@ -1,27 +1,69 @@
+'use client';
 import Image from 'next/image';
 import PrimaryButton from '@/components/ui/buttons/PrimaryButton';
+import { motion } from 'motion/react';
+
 export default function HeroSection() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
   return (
     <section className='flex py-16 flex-col section-container items-center justify-center text-center gap-6'>
-      <h1 className='display-1--semibold text-white leading-tight max-w-5xl'>
+      <motion.h2
+        className='display-1--semibold text-white leading-tight max-w-5xl'
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.2 }}
+        variants={itemVariants}
+      >
         Optimize Creative. <br />
         Scale Insights. <br />
         Outperform Competitors.
-      </h1>
+      </motion.h2>
 
-      <p className='max-w-3xl leading-tight text-base heading-6-regular text-light-silver font-medium'>
+      <motion.p
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.2 }}
+        variants={itemVariants}
+        className='max-w-3xl leading-tight text-base heading-6-regular text-light-silver font-medium'
+      >
         Adology is your AI-powered{' '}
         <span className='text-white font-semibold'>
           Co-Pilot for Creative Strategy
         </span>
         , automating research, tracking trends, and boosting ad performance with
         actionable insights
-      </p>
+      </motion.p>
+
       <PrimaryButton text='Book Demo' />
 
       {/* feature section */}
 
-      <div className='max-w-5xl gap-14 flex justify-center items-center flex-wrap mt-14'>
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.2 }}
+        variants={itemVariants}
+        className='max-w-5xl gap-14 flex justify-center items-center flex-wrap mt-14'
+      >
         <div className='w-30% flex flex-col justify-start items-center gap-6'>
           <span className='text-white display-1--semibold leading-[57.60px]'>
             20H
@@ -46,7 +88,7 @@ export default function HeroSection() {
             Higher ad win rate
           </p>
         </div>
-      </div>
+      </motion.div>
       {/* Hero Image  */}
       <div className='relative'>
         {/* <Image
