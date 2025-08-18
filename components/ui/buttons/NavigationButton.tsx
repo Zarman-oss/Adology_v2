@@ -1,8 +1,25 @@
 import { ReactNode } from 'react';
 
-export default function NavigationButton({ icon }: { icon: ReactNode }) {
+export default function NavigationButton({
+  icon,
+  onClick,
+  disabled = false,
+}: {
+  icon: ReactNode;
+  onClick?: () => void;
+  disabled?: boolean;
+}) {
   return (
-    <button className='p-2 bg-neutral-800 rounded-[100px] flex justify-center items-center gap-2.5 cursor-pointer'>
+    <button
+      onClick={disabled ? undefined : onClick}
+      disabled={disabled}
+      className={`p-2 rounded-full flex justify-center items-center cursor-pointer transition
+        ${
+          disabled
+            ? 'bg-neutral-700 cursor-not-allowed opacity-50'
+            : 'bg-neutral-800 hover:bg-neutral-700'
+        }`}
+    >
       {icon}
     </button>
   );

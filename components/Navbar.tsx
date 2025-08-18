@@ -15,7 +15,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className='text-white mx-auto flex p-4 items-center justify-between sm:px-6 lg:px-8'>
+    <nav className='section-container text-white mx-auto flex p-4 items-center justify-between sm:px-6 lg:px-8'>
       {/* Logo */}
       <div className='flex items-center gap-2'>
         <Image
