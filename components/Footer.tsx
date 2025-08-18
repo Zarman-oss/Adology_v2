@@ -45,7 +45,7 @@ export default function Footer() {
               <Link
                 key={idx}
                 href='/'
-                className='text-white body-1--medium hover:text-grey transition-colors'
+                className='text-white body-1--medium hover:text-grey transition-colors break-words'
               >
                 {text}
               </Link>

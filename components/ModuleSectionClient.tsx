@@ -5,11 +5,13 @@ import { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper'; // ✅ import Swiper type
 import NavigationButton from './ui/buttons/NavigationButton';
 import CarouselCard from './ui/cards/CarouselCard';
 
 export default function ModuleSectionClient() {
-  const swiperRef = useRef<any>(null);
+  // ✅ Use SwiperType instead of any
+  const swiperRef = useRef<SwiperType | null>(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
 
