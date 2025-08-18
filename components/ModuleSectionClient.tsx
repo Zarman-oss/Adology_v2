@@ -1,10 +1,9 @@
 'use client';
 
-import { useRef, useState } from 'react';
 import { LucideChevronLeft, LucideChevronRight } from 'lucide-react';
+import { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import NavigationButton from './ui/buttons/NavigationButton';
 import CarouselCard from './ui/cards/CarouselCard';
