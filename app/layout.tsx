@@ -1,11 +1,11 @@
 import {
   Geist,
   Geist_Mono,
-  Plus_Jakarta_Sans,
   Manrope,
+  Plus_Jakarta_Sans,
 } from 'next/font/google';
-import './globals.css';
 import { ReactNode } from 'react';
+import './globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
