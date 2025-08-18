@@ -7,10 +7,10 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navbar() {
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleDropdown = (menu) => {
+  const toggleDropdown = (menu: 'resources' | 'company') => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
 
@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className='flex items-center gap-2'>
         <Image
           src='/svg/Logo.svg'
-          alt='site logo'
+          alt='Site logo'
           width={20}
           height={20}
           className='object-cover'
@@ -71,7 +71,7 @@ export default function Navbar() {
                       src='/svg/Blog.svg'
                       width={24}
                       height={24}
-                      alt='blog'
+                      alt='Blog'
                     />
                     <span className='text-white body-1-medium'>Blog</span>
                   </Link>
@@ -114,7 +114,7 @@ export default function Navbar() {
                       src='/svg/about-us.svg'
                       width={24}
                       height={24}
-                      alt='about'
+                      alt='About'
                     />
                     <span className='text-white body-1-medium'>About us</span>
                   </Link>
@@ -126,7 +126,7 @@ export default function Navbar() {
                       src='/svg/contact-support.svg'
                       width={24}
                       height={24}
-                      alt='contact'
+                      alt='Contact'
                     />
                     <span className='text-white body-1-medium'>Contact Us</span>
                   </Link>
@@ -136,7 +136,9 @@ export default function Navbar() {
           </AnimatePresence>
         </li>
 
-        <li>FAQ</li>
+        <li>
+          <Link href='/faq'>FAQ</Link>
+        </li>
       </ul>
 
       {/* Mobile Menu */}
@@ -174,12 +176,12 @@ export default function Navbar() {
                       transition={{ duration: 0.2 }}
                       className='mt-2 space-y-2'
                     >
-                      <div className=' flex items-center justify-start gap-2 '>
+                      <div className='flex items-center justify-start gap-2'>
                         <Image
                           src='/svg/Blog.svg'
                           width={24}
                           height={24}
-                          alt='about'
+                          alt='Blog'
                         />
                         <Link href='/blog' className='block hover:underline'>
                           Blog
@@ -214,23 +216,23 @@ export default function Navbar() {
                       transition={{ duration: 0.2 }}
                       className='mt-3 space-y-4'
                     >
-                      <div className=' flex items-center justify-start gap-2'>
+                      <div className='flex items-center justify-start gap-2'>
                         <Image
                           src='/svg/about-us.svg'
                           width={24}
                           height={24}
-                          alt='about'
+                          alt='About'
                         />
                         <Link href='/about' className='block hover:underline'>
                           About Us
                         </Link>
                       </div>
-                      <div className='flex items-center justify-start gap-4'>
+                      <div className='flex items-center justify-start gap-2'>
                         <Image
                           src='/svg/contact-support.svg'
                           width={24}
                           height={24}
-                          alt='about'
+                          alt='Contact'
                         />
                         <Link href='/contact' className='block hover:underline'>
                           Contact Us

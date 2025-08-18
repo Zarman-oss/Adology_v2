@@ -1,7 +1,6 @@
 import PrimaryButton from '@/components/ui/buttons/PrimaryButton';
 import Image from 'next/image';
 import Link from 'next/link';
-import Divider from './ui/misc/Divider';
 
 export default function Footer() {
   return (

@@ -4,16 +4,6 @@ import PrimaryButton from '@/components/ui/buttons/PrimaryButton';
 import { motion } from 'motion/react';
 
 export default function HeroSection() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {

@@ -1,13 +1,3 @@
-'use client';
-
-import { LucideChevronLeft, LucideChevronRight } from 'lucide-react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import NavigationButton from './ui/buttons/NavigationButton';
-import CarouselCard from './ui/cards/CarouselCard';
 import ModuleSectionClient from './ModuleSectionClient';
 export default function ModuleSection() {
   return (
@@ -20,9 +10,7 @@ export default function ModuleSection() {
         Adology’s AI analyzes and labels your creative data instantly,
         uncovering insights that typically take weeks.
       </p>
-
       {/* cards */}
-
       <ModuleSectionClient />
     </section>
   );
